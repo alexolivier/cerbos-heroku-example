@@ -7,7 +7,7 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "cerbos run -- node index.js",
+    "start": "node index.js",
     "test": "node test.js"
   },
   "dependencies": {
