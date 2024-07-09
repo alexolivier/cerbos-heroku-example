@@ -2,7 +2,7 @@ const Cerbos = require("@cerbos/grpc");
 const express = require("express");
 const path = require("path");
 
-const cerbosClient = new Cerbos.GRPC(process.env.CERBOS_GRPC, { tls: false });
+const cerbosClient = new Cerbos.GRPC("localhost:3593", { tls: false });
 
 const PORT = process.env.PORT || 5001;
 
