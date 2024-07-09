@@ -1,0 +1,30 @@
+server:
+  httpListenAddr: ":3592"
+  grpcListenAddr: ":3593"
+
+hub:
+  credentials:
+    clientID: "5G3BMSH04AKZ" # ClientID
+    clientSecret: "cerbos_5sudNEa7lASG0F36AggYRttTIdmx/awbDZlyw+Rg7Wg" # ClientSecret
+    workspaceSecret: "CERBOS-15LGZESAFI2TM-09L7JN2RQ0PXRR0QAT9NNM7UHU0QLNYAP8R3F7MV4A5NX4JLG2RSJKETJV" # WorkspaceSecret to decrypt the bundles -- generated during workspace creation
+
+storage:
+  driver: hub
+  hub:
+    remote:
+      bundleLabel: main
+
+tracing:
+  serviceName: cerbos
+  sampleProbability: 1
+  exporter: otlp
+  otlp:
+    collectorEndpoint: "jaeger:4318"
+
+audit:
+  enabled: true
+  backend: hub
+  accessLogsEnabled: true
+  decisionLogsEnabled: true
+  hub:
+    storagePath: "/tmp"
