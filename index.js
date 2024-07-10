@@ -7,9 +7,6 @@ const cerbosClient = new Cerbos.GRPC("localhost:3593", { tls: false });
 const PORT = process.env.PORT || 5001;
 
 express()
-  .use(express.static(path.join(__dirname, "public")))
-  .set("views", path.join(__dirname, "views"))
-  .set("view engine", "ejs")
   .get("/", async (req, res) => {
     const result = await cerbosClient.checkResource({
       requestId: "5652d164-54ae-4396-bcf8-403367402442",
