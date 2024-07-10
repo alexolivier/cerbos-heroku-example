@@ -4,9 +4,10 @@ server:
 
 hub:
   credentials:
-    clientID: "5G3BMSH04AKZ" # ClientID
-    clientSecret: "cerbos_5sudNEa7lASG0F36AggYRttTIdmx/awbDZlyw+Rg7Wg" # ClientSecret
-    workspaceSecret: "CERBOS-15LGZESAFI2TM-09L7JN2RQ0PXRR0QAT9NNM7UHU0QLNYAP8R3F7MV4A5NX4JLG2RSJKETJV" # WorkspaceSecret to decrypt the bundles -- generated during workspace creation
+    clientID: ${CERBOS_HUB_CLIENT_ID} # ClientID
+    clientSecret: ${CERBOS_HUB_CLIENT_SECRET} # ClientSecret
+    workspaceSecret: ${CERBOS_HUB_WORKSPACE_SECRET} # WorkspaceSecret to decrypt the bundles -- generated during workspace creation
+    pdpID: ${CERBOS_HUB_PDP_ID}
 
 storage:
   driver: hub
