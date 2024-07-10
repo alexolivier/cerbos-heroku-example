@@ -1,6 +1,5 @@
 const Cerbos = require("@cerbos/grpc");
 const express = require("express");
-const path = require("path");
 
 const cerbosClient = new Cerbos.GRPC("localhost:3593", { tls: false });
 

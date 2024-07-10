@@ -15,13 +15,6 @@ storage:
     remote:
       bundleLabel: main
 
-tracing:
-  serviceName: cerbos
-  sampleProbability: 1
-  exporter: otlp
-  otlp:
-    collectorEndpoint: "jaeger:4318"
-
 audit:
   enabled: true
   backend: hub
