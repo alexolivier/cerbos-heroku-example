@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@cerbos/grpc": "^0.18.1",
-    "cerbos": "^0.37.0",
+    "cerbos": "^0.38.1",
     "express": "^4.15.2"
   },
   "devDependencies": {
