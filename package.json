@@ -7,15 +7,9 @@
   },
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "start:cerbos": "cerbos server --config=./.cerbos.yaml"
+    "start": "cerbos server --config=./.cerbos.yaml"
   },
   "dependencies": {
-    "@cerbos/grpc": "^0.18.1",
-    "cerbos": "^0.38.1",
-    "express": "^4.15.2"
-  },
-  "devDependencies": {
-    "tape": "^5.7.4"
+    "cerbos": "^0.38.1"
   }
 }
