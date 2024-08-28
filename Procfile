@@ -1,1 +1,1 @@
-web: npm run start:cerbos
+web: npm run start
