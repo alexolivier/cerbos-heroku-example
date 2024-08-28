@@ -1,6 +1,5 @@
 server:
-  httpListenAddr: ":3592"
-  grpcListenAddr: ":3593"
+  httpListenAddr: ":${PORT}"
 
 hub:
   credentials:
