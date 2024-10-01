@@ -10,6 +10,6 @@
     "start": "cerbos server --config=./.cerbos.yaml"
   },
   "dependencies": {
-    "cerbos": "^0.38.1"
+    "cerbos": "^0.39.0"
   }
 }
